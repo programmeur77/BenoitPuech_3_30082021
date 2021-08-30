@@ -62,6 +62,37 @@
     box-shadow: 0px 5px 5px silver;
     font-size: 11pt;
   }
+
+  .howto__item--large-padding, .howto__item {
+    padding: 7vmin;
+    line-height: 20vmin;
+    background: #f2f2f2;
+    border-radius: 15px;
+    font-size: 12pt;
+  }
+
+  .howto {
+    margin-left: 20px;
+    background: white;
+  }
+  .howto__heading {
+    font-weight: 400;
+  }
+  .howto__item {
+    padding-right: 80px;
+  }
+  .howto__item--large-padding {
+    padding-right: 100px;
+  }
+  .howto__icon {
+    margin-right: 1rem;
+  }
+  .howto__number {
+    padding: 3px;
+    background: #9356DC;
+    border-radius: 50%;
+    color: white;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
