@@ -59,39 +59,45 @@
     color: white;
     background: linear-gradient(#9356DC, #FF79DA);
     border-radius: 25px;
-    box-shadow: 0px 5px 5px silver;
+    box-shadow: 0 5px 5px #cdcdcd;
     font-size: 11pt;
-  }
-
-  .howto__item--large-padding, .howto__item {
-    padding: 7vmin;
-    line-height: 20vmin;
-    background: #f2f2f2;
-    border-radius: 15px;
-    font-size: 12pt;
   }
 
   .howto {
     margin-left: 20px;
-    background: white;
   }
   .howto__heading {
     font-weight: 400;
   }
-  .howto__item {
-    padding-right: 80px;
+  .howto__list {
+    list-style: none;
+    counter-reset: li;
   }
-  .howto__item--large-padding {
-    padding-right: 100px;
+  .howto__item--nolist {
+    margin-bottom: 20px;
+    margin-right: 20px;
+    padding: 7vmin;
+    counter-increment: li;
+    background: #f2f2f2;
+    border-radius: 15px;
+    font-weight: 500;
+    box-shadow: 0 5px 5px #cdcdcd;
   }
-  .howto__icon {
-    margin-right: 1rem;
-  }
-  .howto__number {
-    padding: 3px;
+  .howto__item--nolist::before {
+    margin-left: -35px;
+    margin-right: 10px;
+    padding: 1vmin 2vmin;
+    content: counter(li);
     background: #9356DC;
     border-radius: 50%;
+    text-align: center;
     color: white;
+    font-size: 9pt;
+  }
+  .howto__icon {
+    width: 20px;
+    margin-right: 20px;
+    color: grey;
   }
 }
 
