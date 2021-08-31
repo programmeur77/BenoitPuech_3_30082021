@@ -1,0 +1,12 @@
+.head {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    &__logo {
+        width: 200px;
+        height: 40px;
+        margin: 20px 100px 30px 90px;
+    }
+}

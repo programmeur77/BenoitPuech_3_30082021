@@ -1,0 +1,11 @@
+@mixin shadow ($color: map-get($shadow, color), 
+$shadow-position: map-get($shadow, position), 
+$shadow-size: map-get($shadow, size)) {
+        box-shadow: $shadow-position $shadow-size $shadow-size lighten($color, 30%)
+}
+
+@mixin tablet-responsive {
+    @media screen and (min-width: map-get($breakpoints, tablet)) {
+        @content;
+    }
+}

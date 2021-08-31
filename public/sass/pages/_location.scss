@@ -1,0 +1,11 @@
+.location {
+    width: 100%;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    background: #eaeaea;
+    position: relative;
+    &__icon {
+        margin-right: 10px;
+    }
+}
