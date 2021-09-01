@@ -1,0 +1,70 @@
+.location {
+    width: $full-width;
+    margin-bottom: 0;
+    display: map-get($display-content, display);
+    justify-content: map-get($display-content, justify);
+    background: lighten(grey, 40%);
+    position: relative;
+    &__icon {
+        margin-right: 10px;
+    }
+}
+
+.booking {
+    width: $full-width;
+    margin-top: 0;
+    padding: 10px;
+    background: map-get($colors, primary-background-color);
+    text-align: center;
+    display: map-get($display-content, display);
+    flex-direction: map-get($display-content, direction );
+    align-content: map-get($display-content, align);
+    &__heading {
+        margin: 20px 50px 0 50px;
+        font-weight: $heading-font-weight;
+    }
+}
+
+.howto {
+    margin-left: 20px;
+    &__heading {
+        font-weight: $heading-font-weight;
+    }
+    &__list {
+        margin-left: -30px;
+        list-style: none;
+        counter-reset: li;
+    }
+    &__item {
+        &--nolist {
+            margin: 0 20px 20px 0;
+            padding: 7vmin;
+            counter-increment: li;
+            background: map-get($colors, primary-background-color);
+            border-radius: 15px;
+            font-weight: 500;
+            @include shadow;
+            @include tablet-responsive {
+                margin-right: 50px;
+            }
+            &::before {
+                margin: 0 30px 0 -38px;
+                padding: 1vmin 2vmin;
+                content: counter(li);
+                background: map-get($colors, primary-color);
+                border-radius: 50%;
+                text-align: center;
+                color: white;
+                font-size: 9pt;
+                @include tablet-responsive {
+                    margin-left: -55px;
+                }
+            }
+        }
+    }
+    &__icon {
+        width: 20px;
+        margin-right: 20px;
+        color: map-get($colors, shadow-color);
+    }
+}
