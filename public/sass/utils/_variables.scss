@@ -14,3 +14,13 @@ $shadow: (
 $breakpoints: (
     tablet: 601px
 );
+
+$display-content: (
+    display: flex,
+    justify: center,
+    align: center,
+    direction: column
+);
+
+$heading-font-weight: 400;
+$full-width: 100%;

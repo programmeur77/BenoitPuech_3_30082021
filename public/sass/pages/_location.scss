@@ -1,9 +1,9 @@
 .location {
-    width: 100%;
+    width: $full-width;
     margin-bottom: 0;
-    display: flex;
-    justify-content: center;
-    background: #eaeaea;
+    display: map-get($display-content, display);
+    justify-content: map-get($display-content, justify);
+    background: lighten(grey, 40%);
     position: relative;
     &__icon {
         margin-right: 10px;

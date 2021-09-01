@@ -1,7 +1,7 @@
 .howto {
     margin-left: 20px;
     &__heading {
-        font-weight: 400;
+        font-weight: $heading-font-weight;
     }
     &__list {
         margin-left: -30px;
