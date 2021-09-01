@@ -1,9 +1,9 @@
-.head {
+header {
     width: 100%;
     height: 70px;
     margin: auto;
     position: sticky;
-    &__logo {
+    .header__logo {
         width: 200px;
         height: 40px;
         margin: 20px 100px 30px 90px;
