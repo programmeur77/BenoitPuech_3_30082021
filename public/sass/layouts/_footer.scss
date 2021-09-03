@@ -1,0 +1,28 @@
+footer {
+    padding-left: 25px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    width: $full-width;
+    background: darken(map-get($colors, shadow-color), 30%);
+    color: white;
+}
+
+.footer {
+    &__brand {
+        font-family: 'Shrikhand', sans-serif;
+    }
+
+    &-navbar {
+        margin-left: -35px;
+
+        &__link {
+            padding-bottom: 10px;
+            list-style-type: none;
+        }
+    
+        &__icon {
+            width: 5px;
+            margin-right: 25px;
+        }
+    }
+}
