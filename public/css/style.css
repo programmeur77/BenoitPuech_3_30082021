@@ -73,6 +73,7 @@ header .header__logo {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  cursor: pointer;
   box-shadow: 0 5px 5px #e6e6e6;
 }
 .menu .item__name {
@@ -279,6 +280,26 @@ footer {
 .card__desc-icon {
   margin-top: 25px;
   margin-right: 20px;
+  z-index: 1;
+  position: relative;
+  cursor: pointer;
+}
+.card__desc-icon:hover::after {
+  transform: scaleY(1);
+  /*z-index: 1;*/
+}
+.card__desc-icon::after {
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 25px;
+  left: 0;
+  position: absolute;
+  background: linear-gradient(#9356DC, #FF79DA);
+  z-index: -1;
+  transform-origin: bottom;
+  transform: scaleY(0);
+  transition: transform 0.3s;
 }
 
 .booking__button {
