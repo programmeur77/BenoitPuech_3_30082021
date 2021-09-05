@@ -4,6 +4,10 @@ $shadow-size: map-get($shadow, size)) {
         box-shadow: $shadow-position $shadow-size $shadow-size lighten($color, 30%)
 }
 
+@mixin gradient-color {
+    background: linear-gradient(map-get($colors, secondary-color), map-get($colors, primary-color));
+}
+
 @mixin tablet-responsive {
     @media screen and (min-width: map-get($breakpoints, tablet)) {
         @content;
