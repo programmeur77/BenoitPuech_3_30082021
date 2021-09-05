@@ -178,7 +178,7 @@ footer {
   margin-top: 0;
 }
 .card__desc-icon {
-  margin-top: 20px;
+  margin-top: 25px;
   margin-right: 20px;
 }
 
@@ -188,7 +188,7 @@ footer {
   padding: 1rem;
   text-decoration: none;
   color: white;
-  background: linear-gradient(#9356DC, #FF79DA);
+  background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 25px;
   box-shadow: 0 5px 5px #cdcdcd;
   font-size: 11pt;
