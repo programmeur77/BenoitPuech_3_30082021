@@ -1,0 +1,7 @@
+.menu__border {
+    height: 3px;
+    width: 10vmin;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    background: map-get($colors, tertiary-color);
+}
