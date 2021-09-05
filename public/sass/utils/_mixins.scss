@@ -1,12 +1,18 @@
 @mixin shadow ($color: map-get($shadow, color), 
 $shadow-position: map-get($shadow, position), 
-$shadow-size: map-get($shadow, size)) {
-        box-shadow: $shadow-position $shadow-size $shadow-size lighten($color, 30%)
+$shadow-size: map-get($shadow, size), $enlightment: 40%) {
+        box-shadow: $shadow-position $shadow-size $shadow-size lighten($color, $enlightment)
 }
 
 @mixin gradient-color {
     background: linear-gradient(map-get($colors, secondary-color), map-get($colors, primary-color));
 }
+
+@mixin menu-margins {
+    margin: 10px 20px 50px 20px;
+}
+
+
 
 @mixin tablet-responsive {
     @media screen and (min-width: map-get($breakpoints, tablet)) {
