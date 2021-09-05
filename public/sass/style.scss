@@ -1,9 +1,12 @@
-@import './base/base';
-@import './base/font';
 
 @import './utils/variables';
 @import './utils/mixins';
+
+@import './base/base';
+@import './base/font';
 @import './layouts/head';
+@import './layouts/menu';
 @import './layouts/footer';
 @import './pages/index';
 @import './components/button';
+@import './components/menu-border';
