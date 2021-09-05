@@ -23,6 +23,105 @@ header .header__logo {
   margin: 20px 100px 30px 90px;
 }
 
+.restaurant {
+  width: 100%;
+}
+.restaurant__image {
+  width: 100%;
+  height: 228px;
+  object-fit: cover;
+  position: absolute;
+}
+
+.menu {
+  margin-top: 185px;
+  margin-bottom: 0;
+  padding-top: 10px;
+  position: relative;
+  background: #f9f9f9;
+  border-radius: 40px 40px 0 0;
+}
+.menu .flex-title {
+  width: 90%;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.menu .flex-title__heading {
+  font-family: "Shrikhand", sans-serif;
+}
+.menu .flex-title__icon {
+  margin-right: 20px;
+  align-self: center;
+  font-size: 16pt;
+}
+.menu__heading {
+  margin-left: 20px;
+  margin-bottom: 5px;
+  margin-top: 30px;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 12pt;
+}
+.menu .item {
+  margin: 10px 20px 50px 20px;
+  margin-bottom: 10px;
+  padding: 0 10px;
+  background: white;
+  border-radius: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-shadow: 0 5px 5px #e6e6e6;
+}
+.menu .item__name {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-weight: 500;
+  font-size: 14pt;
+}
+.menu .item__desc {
+  width: 70%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 40px;
+  font-size: 10pt;
+}
+.menu .item__price {
+  margin-top: 10px;
+  transform: translateX(-10px);
+  transition: transform 0.3s;
+  font-weight: 500;
+  font-size: 10pt;
+}
+.menu .item:hover > .select {
+  transform: scaleX(1);
+}
+.menu .item:hover > .select > .select__icon {
+  transform: rotate(-1turn);
+}
+.menu .item:hover > .item__price {
+  transform: translateX(-69px);
+}
+.menu .select {
+  padding: 24.5px;
+  margin-top: -100px;
+  margin-left: 257px;
+  align-self: flex-end;
+  background: #99E2D0;
+  border-radius: 0 15px 15px 0;
+  font-size: 14pt;
+  color: white;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s;
+}
+.menu .select__icon {
+  transition: transform 0.3s ease;
+}
+
 footer {
   padding-left: 25px;
   padding-top: 5px;
@@ -63,7 +162,7 @@ footer {
   width: 100%;
   margin-top: 0;
   padding: 10px;
-  background: #f2f2f2;
+  background: #f9f9f9;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -92,7 +191,7 @@ footer {
   background: #f2f2f2;
   border-radius: 15px;
   font-weight: 500;
-  box-shadow: 0 5px 5px #cdcdcd;
+  box-shadow: 0 5px 5px #e6e6e6;
 }
 @media screen and (min-width: 601px) {
   .howto__item--nolist {
@@ -124,7 +223,7 @@ footer {
   width: 100%;
   padding-top: 20px;
   padding-bottom: 30px;
-  background: #f2f2f2;
+  background: #f9f9f9;
 }
 .cards__heading {
   margin: 30px 0 10px 20px;
@@ -163,7 +262,7 @@ footer {
   justify-content: space-between;
   background: white;
   border-radius: 0 0 20px 20px;
-  box-shadow: 0 5px 5px #cdcdcd;
+  box-shadow: 0 5px 5px #e6e6e6;
 }
 .card__desc-txt {
   margin-left: 10px;
@@ -190,8 +289,16 @@ footer {
   color: white;
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 25px;
-  box-shadow: 0 5px 5px #cdcdcd;
+  box-shadow: 0 5px 5px #e6e6e6;
   font-size: 11pt;
+}
+
+.menu__border {
+  height: 3px;
+  width: 10vmin;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  background: #99E2D0;
 }
 
 /*# sourceMappingURL=style.css.map */
