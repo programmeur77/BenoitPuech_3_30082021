@@ -145,10 +145,12 @@
             }
 
             &::after {
+                width: 9px;
+                height: 9px;
                 content: "";
                 top: 0;
                 right: 0;
-                bottom: 25px;
+                bottom: 26px;
                 left: 0;
                 position: absolute;
                 background: linear-gradient(map-get($colors, primary-color), map-get($colors, secondary-color));
