@@ -47,12 +47,11 @@
         @include menu-margins;
         margin-bottom: 10px;
         padding: 0 10px;
-        background: lighten(grey, 50%);
+        background: white;
         border-radius: 15px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        cursor: pointer;
         @include shadow;
     
         &__name {
