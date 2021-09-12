@@ -80,8 +80,7 @@
             margin-top: 10px;
             margin-right: -20px;
             flex-grow: 3;
-            transform: translateX(-10px);
-            transition: transform 0.3s;
+            transform: translateX(-15px);
             font-weight: 500;
             font-size: 14px;
         }
@@ -97,10 +96,6 @@
 
             & > .item__desc {
                 width: 52%;
-            }
-    
-            & > .item__price {
-                transform: translateX(-20px);
             }
         }
     } 
