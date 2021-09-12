@@ -1,3 +1,4 @@
+@use "sass:math";
 $colors: (
     primary-color: #9356DC,
     secondary-color: #FF79DA,
@@ -30,3 +31,8 @@ $full-width: 100%;
 $tiertiary-font-size: 10pt;
 $primary-font: 'Roboto', sans-serif;
 $menu-heading-font: 'Shrikhand', sans-serif;
+
+//------ MENU FADE IN EFFECT VARIABLES ------
+$item-count: 9;
+$animation-duration: 1s;
+$animation-delay: math.div($animation-duration, $item-count)
