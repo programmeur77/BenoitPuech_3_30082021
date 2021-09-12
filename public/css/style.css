@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?Roboto:wght@100;300;400;500;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@keyframes fadeIn {
+  from {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(4%);
+    opacity: 1;
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -160,16 +170,6 @@ header .header__logo {
   transition: transform 350ms ease;
 }
 
-@keyframes fadeIn {
-  from {
-    transform: translateY(0);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(4%);
-    opacity: 1;
-  }
-}
 footer {
   padding-left: 25px;
   padding-top: 5px;
