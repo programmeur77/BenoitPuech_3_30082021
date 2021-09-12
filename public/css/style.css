@@ -75,7 +75,36 @@ header .header__logo {
   justify-content: space-between;
   box-shadow: 0 5px 5px #e6e6e6;
   transform-origin: top;
+  opacity: 0;
+  transform: translateY(0);
   animation: fadeIn 1s forwards;
+}
+.menu .item--1 {
+  animation-delay: 0.1111111111s;
+}
+.menu .item--2 {
+  animation-delay: 0.2222222222s;
+}
+.menu .item--3 {
+  animation-delay: 0.3333333333s;
+}
+.menu .item--4 {
+  animation-delay: 0.4444444444s;
+}
+.menu .item--5 {
+  animation-delay: 0.5555555556s;
+}
+.menu .item--6 {
+  animation-delay: 0.6666666667s;
+}
+.menu .item--7 {
+  animation-delay: 0.7777777778s;
+}
+.menu .item--8 {
+  animation-delay: 0.8888888889s;
+}
+.menu .item--9 {
+  animation-delay: 1s;
 }
 .menu .item__name {
   width: 100%;
@@ -131,14 +160,6 @@ header .header__logo {
   transition: transform 350ms ease;
 }
 
-@keyframes item-fadeIn {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(1);
-  }
-}
 @keyframes fadeIn {
   from {
     transform: translateY(0);
