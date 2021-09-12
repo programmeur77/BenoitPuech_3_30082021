@@ -54,7 +54,14 @@
         justify-content: space-between;
         @include shadow;
         transform-origin: top;
-        animation: fadeIn 1s forwards;
+        opacity: 0;
+        transform: translateY(0);
+        animation: fadeIn $animation-duration forwards;
+        @for $i from 1 through $item-count {
+            &--#{$i} {
+                animation-delay: $animation-delay * $i;
+            }
+        }
     
         &__name {
             width: $full-width;
@@ -118,15 +125,6 @@
         &__icon {
             transition: transform 350ms ease;
         }
-    }
-}
-
-@keyframes item-fadeIn {
-    from {
-        transform: translateY(0);
-    }
-    to {
-        transform: translateY(1);
     }
 }
 
