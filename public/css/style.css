@@ -74,6 +74,8 @@ header .header__logo {
   flex-wrap: wrap;
   justify-content: space-between;
   box-shadow: 0 5px 5px #e6e6e6;
+  transform-origin: top;
+  animation: fadeIn 1s forwards;
 }
 .menu .item__name {
   width: 100%;
@@ -129,6 +131,24 @@ header .header__logo {
   transition: transform 350ms ease;
 }
 
+@keyframes item-fadeIn {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(1);
+  }
+}
+@keyframes fadeIn {
+  from {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(4%);
+    opacity: 1;
+  }
+}
 footer {
   padding-left: 25px;
   padding-top: 5px;
