@@ -1,0 +1,12 @@
+//------ FADE-IN EFFECT KEYFRAME ------
+@keyframes fadeIn {
+    from {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(4%);
+        opacity: 1;
+    }
+}
