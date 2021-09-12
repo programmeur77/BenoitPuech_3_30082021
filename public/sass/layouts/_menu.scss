@@ -53,6 +53,8 @@
         flex-wrap: wrap;
         justify-content: space-between;
         @include shadow;
+        transform-origin: top;
+        animation: fadeIn 1s forwards;
     
         &__name {
             width: $full-width;
@@ -116,5 +118,26 @@
         &__icon {
             transition: transform 350ms ease;
         }
+    }
+}
+
+@keyframes item-fadeIn {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(1);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(4%);
+        opacity: 1;
     }
 }
