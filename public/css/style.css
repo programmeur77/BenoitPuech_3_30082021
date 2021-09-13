@@ -326,21 +326,27 @@ footer {
 }
 .card__desc-icon {
   margin-top: 25px;
-  margin-right: -100px;
-  z-index: 2;
+  margin-right: 20px;
+  z-index: 1;
   position: relative;
   cursor: pointer;
 }
-.card__desc-icon--animation {
-  position: relative;
-  top: 25px;
-  right: 100px;
+.card__desc-icon::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f004";
+  top: 0px;
+  right: 20px;
+  bottom: 35px;
+  left: 0;
+  position: absolute;
   color: #FF79DA;
-  transform: scaleY(0);
   transform-origin: bottom;
-  transition: transform 0.2s;
+  transform: scaleY(0);
+  z-index: -1;
+  transition: transform 0.3s ease;
 }
-.card__desc-icon:hover + .card__desc-icon--animation {
+.card__desc-icon:hover::after {
   transform: scaleY(1);
 }
 
