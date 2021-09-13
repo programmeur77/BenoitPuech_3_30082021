@@ -324,6 +324,27 @@ footer {
 .card__desc-location {
   margin-top: 0;
 }
+
+.booking__button {
+  width: 70%;
+  margin: 20px 0 20px 50px;
+  padding: 1rem;
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 25px;
+  box-shadow: 0 5px 5px #e6e6e6;
+  font-size: 11pt;
+}
+
+.menu__border {
+  height: 3px;
+  width: 10vmin;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  background: #99E2D0;
+}
+
 .card__desc-icon {
   margin-top: 25px;
   margin-right: 20px;
@@ -348,26 +369,6 @@ footer {
 }
 .card__desc-icon:hover::after {
   transform: scaleY(1);
-}
-
-.booking__button {
-  width: 70%;
-  margin: 20px 0 20px 50px;
-  padding: 1rem;
-  text-decoration: none;
-  color: white;
-  background: linear-gradient(#FF79DA, #9356DC);
-  border-radius: 25px;
-  box-shadow: 0 5px 5px #e6e6e6;
-  font-size: 11pt;
-}
-
-.menu__border {
-  height: 3px;
-  width: 10vmin;
-  margin-left: 20px;
-  margin-bottom: 10px;
-  background: #99E2D0;
 }
 
 /*# sourceMappingURL=style.css.map */
