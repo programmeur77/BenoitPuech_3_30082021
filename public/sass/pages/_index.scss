@@ -133,32 +133,26 @@
 
         &-icon {
             margin-top: 25px;
-            margin-right: 20px;
-            z-index: 1;
+            margin-right: -100px;
+            z-index: 2;
             position: relative;
             cursor: pointer;
 
-            &:hover {
-                &::after {
-                    transform: scaleY(1);
-                }
+            &--animation {
+                position: relative;
+                top: 25px;
+                right: 100px;
+                color: map-get($colors, secondary-color);
+                transform: scaleY(0);
+                transform-origin: bottom;
+                transition: transform 0.2s;
             }
 
-            &::after {
-                width: 9px;
-                height: 9px;
-                content: "";
-                top: 0;
-                right: 0;
-                bottom: 26px;
-                left: 0;
-                position: absolute;
-                background: linear-gradient(map-get($colors, primary-color), map-get($colors, secondary-color));
-                z-index: -1;
-                transform-origin: bottom;
-                transform: scaleY(0);
-                transition: transform 0.3s;
-            }
+            &:hover {
+                & + .card__desc-icon--animation {
+                    transform: scaleY(1);
+                }
+            } 
         }
     }
 
