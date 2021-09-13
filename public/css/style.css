@@ -326,28 +326,22 @@ footer {
 }
 .card__desc-icon {
   margin-top: 25px;
-  margin-right: 20px;
-  z-index: 1;
+  margin-right: -100px;
+  z-index: 2;
   position: relative;
   cursor: pointer;
 }
-.card__desc-icon:hover::after {
-  transform: scaleY(1);
-}
-.card__desc-icon::after {
-  width: 9px;
-  height: 9px;
-  content: "";
-  top: 0;
-  right: 0;
-  bottom: 26px;
-  left: 0;
-  position: absolute;
-  background: linear-gradient(#9356DC, #FF79DA);
-  z-index: -1;
-  transform-origin: bottom;
+.card__desc-icon--animation {
+  position: relative;
+  top: 25px;
+  right: 100px;
+  color: #FF79DA;
   transform: scaleY(0);
-  transition: transform 0.3s;
+  transform-origin: bottom;
+  transition: transform 0.2s;
+}
+.card__desc-icon:hover + .card__desc-icon--animation {
+  transform: scaleY(1);
 }
 
 .booking__button {
