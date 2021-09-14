@@ -5,14 +5,21 @@ $shadow-size: map-get($shadow, size), $enlightment: 40%) {
 }
 
 @mixin gradient-color {
-    background: linear-gradient(map-get($colors, secondary-color), map-get($colors, primary-color));
+    background: linear-gradient($secondary-color, $primary-color);
 }
 
 @mixin menu-margins {
     margin: 10px 20px 50px 20px;
 }
 
-
+@mixin white($property: 'background') {
+    @if $property == 'background' {
+        background: lighten($primary-background-color, 50%);
+    }
+    @else if $property == 'color' {
+        color: lighten($primary-background-color, 50%);
+    }
+}
 
 @mixin tablet-responsive {
     @media screen and (min-width: map-get($breakpoints, tablet)) {
