@@ -6,24 +6,26 @@
     cursor: pointer;
 
     &::after {
-        font-family: "Font Awesome 5 Free";
+        font-family: 'Font Awesome 5 Free';
         font-weight: 900;
         content: '\f004';
-        top: 0px;
-        right: 20px;
-        bottom: 35px;
-        left: 0;
         position: absolute;
-        color: $secondary-color;
-        transform-origin: bottom;
-        transform: scaleY(0);
+        bottom: 26px;
+        right: -0.8px;
         z-index: -1;
-        transition: transform 0.3s ease;
+        background: linear-gradient($secondary-color, $primary-color);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        transform-origin: bottom;
+        transform: scale(0);
+        transition: transform .6s, z-index .3s;
     }
 
     &:hover {
         &::after {
-            transform: scaleY(1);
+            transform: scale(100%);
+            z-index: 2;
         }
     }
 }
