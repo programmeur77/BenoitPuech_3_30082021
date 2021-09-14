@@ -14,7 +14,7 @@
         bottom: 35px;
         left: 0;
         position: absolute;
-        color: map-get($colors, secondary-color);
+        color: $secondary-color;
         transform-origin: bottom;
         transform: scaleY(0);
         z-index: -1;

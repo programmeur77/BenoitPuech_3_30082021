@@ -3,8 +3,8 @@ footer {
     padding-top: 5px;
     padding-bottom: 10px;
     width: $full-width;
-    background: darken(map-get($colors, shadow-color), 30%);
-    color: lighten(grey, 50%);
+    background: darken($primary-background-color, 30%);
+    @include white('color');
 }
 
 .footer {
@@ -21,7 +21,7 @@ footer {
 
             &--active {
                 text-decoration: none;
-                color: lighten(grey, 50%);
+                @include white('color');
             }
         }
     

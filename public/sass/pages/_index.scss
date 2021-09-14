@@ -3,7 +3,7 @@
     margin-bottom: 0;
     display: map-get($display-content, display);
     justify-content: map-get($display-content, justify);
-    background: lighten(grey, 40%);
+    background: lighten($primary-background-color, 40%);
     position: relative;
     &__icon {
         margin-right: 10px;
@@ -14,7 +14,7 @@
     width: $full-width;
     margin-top: 0;
     padding: 10px;
-    background: lighten(grey, 47.5%);
+    background: lighten($primary-background-color, 47.5%);
     text-align: center;
     display: map-get($display-content, display);
     flex-direction: map-get($display-content, direction );
@@ -40,7 +40,7 @@
             margin: 0 20px 20px 0;
             padding: 7vmin;
             counter-increment: li;
-            background: map-get($colors, primary-background-color);
+            background: lighten($primary-background-color, 47.5%);
             border-radius: 15px;
             font-weight: 500;
             @include shadow;
@@ -51,10 +51,10 @@
                 margin: 0 30px 0 -38px;
                 padding: 1vmin 2vmin;
                 content: counter(li);
-                background: map-get($colors, primary-color);
+                background: $primary-color;
                 border-radius: 50%;
                 text-align: center;
-                color: lighten(grey, 50%);
+                @include white('color');
                 font-size: 9pt;
                 @include tablet-responsive {
                     margin-left: -55px;
@@ -65,7 +65,7 @@
     &__icon {
         width: 20px;
         margin-right: 20px;
-        color: map-get($colors, shadow-color);
+        color: $primary-background-color;
     }
 }
 
@@ -73,7 +73,7 @@
     width: $full-width;
     padding-top: 20px;
     padding-bottom: 30px;
-    background: lighten(grey, 47.5%);
+    background: lighten($primary-background-color, 47.5%);
     &__heading {
         margin: 30px 0 10px 20px;
         font-weight: $heading-font-weight;
@@ -101,8 +101,8 @@
         position: absolute;
         font-size: $tiertiary-font-size;
         font-weight: 900;
-        background: map-get($colors, tertiary-color);
-        color: darken(map-get($colors, tertiary-color), 35%);
+        background: $tertiary-color;
+        color: darken($tertiary-color, 35%);
         border-radius: 2px;
         z-index: 1;
     }
@@ -112,7 +112,7 @@
         margin-top: -3px;
         display: flex;
         justify-content: space-between;
-        background: lighten(grey, 50%);
+        @include white('background');
         border-radius: 0 0 20px 20px;
         @include shadow;
 
