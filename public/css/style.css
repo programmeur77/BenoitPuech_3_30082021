@@ -79,10 +79,9 @@ header .header__logo--arrowed {
 .menu .flex-title__heading {
   font-family: "Shrikhand", sans-serif;
 }
-.menu .flex-title__icon {
-  margin-right: 20px;
-  align-self: center;
-  font-size: 16pt;
+.menu .flex-title .card__desc-icon {
+  margin-top: 30px;
+  align-self: baseline;
 }
 .menu__heading {
   margin-left: 20px;
@@ -149,7 +148,7 @@ header .header__logo--arrowed {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: 14px;
+  font-size: 13px;
   transition: width 0.3s;
 }
 .menu .item__price {
