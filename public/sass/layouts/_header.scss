@@ -1,0 +1,26 @@
+header {
+    width: $full-width;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    .header {
+        &__arrow {
+            margin-left: 30px;
+            align-self: center;
+            text-decoration: none;
+            color: darken($primary-background-color, 100%);
+        }
+
+        &__logo {
+            width: 200px;
+            height: 40px;
+            margin-left: 90px;
+            margin-right: 80px;
+            align-self: center;
+
+            &--arrowed {
+                margin: 0 80px 0 0;
+            }
+        }
+    }
+}
