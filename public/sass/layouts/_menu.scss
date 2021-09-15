@@ -27,10 +27,9 @@
             font-family: $menu-heading-font;
         }
 
-        &__icon {
-            margin-right: 20px;
-            align-self: center;
-            font-size: 16pt;
+        & .card__desc-icon {
+            margin-top: 30px;
+            align-self: baseline;
         }
     }
 
@@ -57,7 +56,7 @@
         opacity: 0;
         transform: translateY(0);
         animation: fadeIn $animation-duration forwards;
-        
+
         @for $i from 1 through $item-count {
             &--#{$i} {
                 animation-delay: $animation-delay * $i;
@@ -80,7 +79,7 @@
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-            font-size: 14px;
+            font-size: 13px;
             transition: width .3s;
         }
     
