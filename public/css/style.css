@@ -383,6 +383,8 @@ footer {
   background: linear-gradient(#FF79DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -moz-background-clip: text;
   color: transparent;
   transform-origin: bottom;
   transform: scale(0);
