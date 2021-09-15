@@ -1,11 +1,13 @@
 
+@use "sass:math";
+
 @import './utils/variables';
 @import './utils/mixins';
 @import './utils/keyframes';
 
 @import './base/base';
 @import './base/font';
-@import './layouts/head';
+@import './layouts/header';
 @import './layouts/menu';
 @import './layouts/footer';
 @import './pages/index';
