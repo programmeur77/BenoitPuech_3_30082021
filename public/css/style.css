@@ -1,11 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?Roboto:wght@100;300;400;500;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-/*$colors: (
-    primary-color: #9356DC,
-    secondary-color: #FF79DA,
-    tertiary-color: #99E2D0,
-    shadow-color: grey
-);*/
 @keyframes fadeIn {
   from {
     transform: translateY(0);
@@ -174,7 +168,7 @@ header .header__logo--arrowed {
   margin-top: -100px;
   margin-left: 259px;
   align-self: flex-end;
-  background: #99E2D0;
+  background: #99e2d0;
   border-radius: 0 15px 15px 0;
   font-size: 14pt;
   color: white;
@@ -270,7 +264,7 @@ footer {
   margin: 0 30px 0 -38px;
   padding: 1vmin 2vmin;
   content: counter(li);
-  background: #9356DC;
+  background: #9356dc;
   border-radius: 50%;
   text-align: center;
   color: white;
@@ -318,7 +312,7 @@ footer {
   position: absolute;
   font-size: 10pt;
   font-weight: 900;
-  background: #99E2D0;
+  background: #99e2d0;
   color: #2c9c81;
   border-radius: 2px;
   z-index: 1;
@@ -351,7 +345,7 @@ footer {
   padding: 1rem;
   text-decoration: none;
   color: white;
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#ff79da, #9356dc);
   border-radius: 25px;
   box-shadow: 0 5px 5px #e6e6e6;
   font-size: 11pt;
@@ -362,7 +356,7 @@ footer {
   width: 10vmin;
   margin-left: 20px;
   margin-bottom: 10px;
-  background: #99E2D0;
+  background: #99e2d0;
 }
 
 .card__desc-icon {
@@ -380,7 +374,7 @@ footer {
   bottom: 26px;
   right: -0.8px;
   z-index: -1;
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#ff79da, #9356dc);
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -393,6 +387,77 @@ footer {
 .card__desc-icon:hover::after {
   transform: scale(100%);
   z-index: 2;
+}
+
+.load {
+  width: 30vh;
+  height: 30vh;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  background: white;
+  opacity: 1;
+}
+.load__bar {
+  background: linear-gradient(#9356dc, #ff79da);
+  height: 100%;
+  width: 3vh;
+  animation: bars 1000ms backwards infinite alternate ease-in-out;
+  z-index: 1;
+}
+.load__bar--1 {
+  animation-delay: 200ms;
+}
+.load__bar--1, .load__bar--3, .load__bar--5 {
+  transform-origin: top;
+}
+.load__bar--2, .load__bar--4 {
+  transform-origin: bottom;
+}
+.load__bar--2 {
+  animation-delay: 400ms;
+}
+.load__bar--1, .load__bar--3, .load__bar--5 {
+  transform-origin: top;
+}
+.load__bar--2, .load__bar--4 {
+  transform-origin: bottom;
+}
+.load__bar--3 {
+  animation-delay: 600ms;
+}
+.load__bar--1, .load__bar--3, .load__bar--5 {
+  transform-origin: top;
+}
+.load__bar--2, .load__bar--4 {
+  transform-origin: bottom;
+}
+.load__bar--4 {
+  animation-delay: 800ms;
+}
+.load__bar--1, .load__bar--3, .load__bar--5 {
+  transform-origin: top;
+}
+.load__bar--2, .load__bar--4 {
+  transform-origin: bottom;
+}
+.load__bar--5 {
+  animation-delay: 1000ms;
+}
+.load__bar--1, .load__bar--3, .load__bar--5 {
+  transform-origin: top;
+}
+.load__bar--2, .load__bar--4 {
+  transform-origin: bottom;
+}
+
+@keyframes bars {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100%);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
