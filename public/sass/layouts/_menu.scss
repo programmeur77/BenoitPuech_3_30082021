@@ -1,128 +1,150 @@
 .restaurant {
+  width: $full-width;
+  &__image {
     width: $full-width;
-    &__image {
-        width: $full-width;
-        height: 200px;
-        object-fit: cover;
-        position: absolute;
-    }
+    height: 200px;
+    object-fit: cover;
+    position: absolute;
+  }
 }
 
 .menu {
-    margin-top: 175px;
-    margin-bottom: 0;
-    padding-top: 10px;
-    position: relative;
-    background: lighten($primary-background-color, 47.5%);
-    border-radius: 25px 25px 0 0;
+  margin-top: 175px;
+  margin-bottom: 0;
+  padding-top: 10px;
+  position: relative;
+  background: lighten($primary-background-color, 47.5%);
+  border-radius: 25px 25px 0 0;
 
-    .flex-title {
-        width: 90%;
-        margin-left: 20px;
-        margin-bottom: 20px;
-        display: flex;
-        justify-content: space-between;
-
-        &__heading {
-            font-family: $menu-heading-font;
-        }
-
-        & .card__desc-icon {
-            margin-top: 30px;
-            align-self: baseline;
-        }
-    }
+  .flex-title {
+    width: 90%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
 
     &__heading {
-        margin-left: 20px;
-        margin-bottom: 5px;
-        margin-top: 30px;
-        text-transform: uppercase;
-        font-weight: 300;
-        font-size: 12pt;
+      font-family: $menu-heading-font;
     }
 
-    .item {
-        @include menu-margins;
-        margin-bottom: 10px;
-        padding: 0 10px;
-        @include white;
-        border-radius: 15px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        @include shadow;
-        transform-origin: top;
-        opacity: 0;
-        transform: translateY(0);
-        animation: fadeIn $animation-duration forwards;
-
-        @for $i from 1 through $item-count {
-            &--#{$i} {
-                animation-delay: $animation-delay * $i;
-            }
-        }
-    
-        &__name {
-            width: $full-width;
-            margin: 10px 0 0 0;
-            font-weight: $tiertiary-font-weigth;
-            font-size: 16px;
-        }
-    
-        &__desc {
-            width: 80%;
-            flex-grow: 3;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            margin-right: 20px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            font-size: 13px;
-            transition: width .3s;
-        }
-    
-        &__price {
-            width: 10%;
-            margin-top: 10px;
-            margin-right: -20px;
-            flex-grow: 3;
-            transform: translateX(-15px);
-            font-weight: 500;
-            font-size: 14px;
-        }
-    
-        &:hover {
-            & > .select {
-                transform: scaleX(1); 
-                
-                & > .select__icon {
-                    transform: rotate(-1turn);
-                }
-            }
-
-            & > .item__desc {
-                width: 52%;
-            }
-        }
-    } 
-
-    .select {
-        padding: 24px;
-        margin-top: -100px;
-        margin-left: 259px;
-        align-self: flex-end;
-        background: $tertiary-color;
-        border-radius: 0 15px 15px 0;
-        font-size: 14pt;
-        @include white('color');
-        transform: scaleX(0);
-        transform-origin: right;
-        transition: transform 0.3s;
-
-        &__icon {
-            transition: transform 350ms ease;
-        }
+    & .card__desc-icon {
+      margin-top: 30px;
+      align-self: baseline;
     }
+  }
+
+  &__heading {
+    margin-left: 20px;
+    margin-bottom: 5px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 12pt;
+  }
+
+  .item {
+    @include menu-margins;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    @include white;
+    @include shadow;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    transform-origin: top;
+    -webkit-transform-origin: top;
+    -moz-transform-origin: top;
+    opacity: 0;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    animation: fadeIn $animation-duration forwards;
+    -webkit-animation: fadeIn $animation-duration forwards;
+    -moz-animation: fadeIn $animation-duration forwards;
+
+    @for $i from 1 through $item-count {
+      &--#{$i} {
+        animation-delay: $animation-delay * $i;
+        -webkit-animation-delay: $animation-delay * $i;
+        -moz-animation-delay: $animation-delay * $i;
+      }
+    }
+
+    &__name {
+      width: $full-width;
+      margin: 10px 0 0 0;
+      font-weight: $tiertiary-font-weigth;
+      font-size: 16px;
+    }
+
+    &__desc {
+      width: 80%;
+      flex-grow: 3;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-right: 20px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-size: 13px;
+      transition: width 0.3s;
+    }
+
+    &__price {
+      width: 10%;
+      margin-top: 10px;
+      margin-right: -20px;
+      flex-grow: 3;
+      transform: translateX(-15px);
+      -webkit-transform: translateX(-15px);
+      -moz-transform: translateX(-15px);
+      font-weight: 500;
+      font-size: 14px;
+    }
+
+    &:hover {
+      & > .select {
+        transform: scaleX(1);
+        -webkit-transform: scaleX(1);
+        -moz-transform: scaleX(1);
+
+        & > .select__icon {
+          transform: rotate(-1turn);
+          -webkit-transform: rotate(-1turn);
+          -moz-transform: rotate(-1turn);
+        }
+      }
+
+      & > .item__desc {
+        width: 52%;
+      }
+    }
+  }
+
+  .select {
+    padding: 24px;
+    margin-top: -100px;
+    margin-left: 259px;
+    align-self: flex-end;
+    background: $tertiary-color;
+    border-radius: 0 15px 15px 0;
+    font-size: 14pt;
+    @include white('color');
+    transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    transform-origin: right;
+    -webkit-transform-origin: right;
+    -moz-transform-origin: right;
+    transition: transform 0.3s;
+    -webkit-transition: transform 0.3s;
+    -moz-transition: transform 0.3s;
+
+    &__icon {
+      transition: transform 350ms ease;
+      -webkit-transition: transform 350ms ease;
+      -moz-transition: transform 350ms ease;
+    }
+  }
 }
