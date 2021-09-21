@@ -46,6 +46,13 @@
       @include shadow;
       @include tablet-responsive {
         margin-right: 50px;
+        &:hover {
+          background: lighten($primary-color, 30%);
+
+          & .howto__icon {
+            color: $primary-color;
+          }
+        }
       }
       &::before {
         margin: 0 30px 0 -38px;
