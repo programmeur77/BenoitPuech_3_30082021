@@ -317,6 +317,12 @@ footer {
   .howto__item--nolist {
     margin-right: 50px;
   }
+  .howto__item--nolist:hover {
+    background: #e4d5f6;
+  }
+  .howto__item--nolist:hover .howto__icon {
+    color: #9356dc;
+  }
 }
 .howto__item--nolist::before {
   margin: 0 30px 0 -38px;
@@ -459,14 +465,14 @@ footer {
 
 .loader {
   width: 100%;
-  height: 740px;
+  height: 750px;
   position: fixed;
   display: flex;
   justify-content: center;
   background: white;
-  animation: loader 8.5s both;
-  -webkit-animation: loader 8.5s both;
-  -moz-animation: loader 8.5s both;
+  animation: loader 6s both;
+  -webkit-animation: loader 6s both;
+  -moz-animation: loader 6s both;
   z-index: 2;
 }
 
@@ -482,15 +488,15 @@ footer {
   background: linear-gradient(#9356dc, #ff79da);
   height: 100%;
   width: 3vh;
-  animation: bars 3000ms both 2 alternate ease-in-out;
-  -webkit-animation: bars 3000ms both 2 alternate ease-in-out;
-  -moz-animation: bars 3000ms both 2 alternate ease-in-out;
+  animation: bars 2s both 2 alternate ease-in-out;
+  -webkit-animation: bars 2s both 2 alternate ease-in-out;
+  -moz-animation: bars 2s both 2 alternate ease-in-out;
   z-index: 1;
 }
 .load__bar--1 {
-  animation-delay: 600ms;
-  -webkit-animation-delay: 600ms;
-  -moz-animation-delay: 600ms;
+  animation-delay: 0.4s;
+  -webkit-animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
 }
 .load__bar--1, .load__bar--3, .load__bar--5 {
   transform-origin: top;
@@ -503,9 +509,9 @@ footer {
   -moz-transform-origin: bottom;
 }
 .load__bar--2 {
-  animation-delay: 1200ms;
-  -webkit-animation-delay: 1200ms;
-  -moz-animation-delay: 1200ms;
+  animation-delay: 0.8s;
+  -webkit-animation-delay: 0.8s;
+  -moz-animation-delay: 0.8s;
 }
 .load__bar--1, .load__bar--3, .load__bar--5 {
   transform-origin: top;
@@ -518,9 +524,9 @@ footer {
   -moz-transform-origin: bottom;
 }
 .load__bar--3 {
-  animation-delay: 1800ms;
-  -webkit-animation-delay: 1800ms;
-  -moz-animation-delay: 1800ms;
+  animation-delay: 1.2s;
+  -webkit-animation-delay: 1.2s;
+  -moz-animation-delay: 1.2s;
 }
 .load__bar--1, .load__bar--3, .load__bar--5 {
   transform-origin: top;
@@ -533,9 +539,9 @@ footer {
   -moz-transform-origin: bottom;
 }
 .load__bar--4 {
-  animation-delay: 2400ms;
-  -webkit-animation-delay: 2400ms;
-  -moz-animation-delay: 2400ms;
+  animation-delay: 1.6s;
+  -webkit-animation-delay: 1.6s;
+  -moz-animation-delay: 1.6s;
 }
 .load__bar--1, .load__bar--3, .load__bar--5 {
   transform-origin: top;
@@ -548,9 +554,9 @@ footer {
   -moz-transform-origin: bottom;
 }
 .load__bar--5 {
-  animation-delay: 3000ms;
-  -webkit-animation-delay: 3000ms;
-  -moz-animation-delay: 3000ms;
+  animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
 }
 .load__bar--1, .load__bar--3, .load__bar--5 {
   transform-origin: top;
