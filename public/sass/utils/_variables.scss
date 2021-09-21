@@ -6,10 +6,10 @@ $primary-background-color: grey;
 
 //------ LOADER VARIABLES ------
 $size: 3vh;
-$anim-duration: 3000ms;
+$anim-duration: 2s;
 $num-bars: 5;
 $anim-delay: math.div($anim-duration, $num-bars);
-$loader-background-duration: 8.5s;
+$loader-background-duration: 6s;
 
 $shadow: (
   size: 5px,
