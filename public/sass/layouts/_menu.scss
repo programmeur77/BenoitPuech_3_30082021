@@ -51,7 +51,6 @@
   .item {
     width: 90vw;
     margin-left: 20px;
-    //@include menu-margins;
     margin-bottom: 10px;
     padding: 0 10px;
     @include white;
@@ -96,20 +95,20 @@
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      font-size: 15px;
+      font-size: 14px;
       transition: width 0.3s;
     }
 
     &__price {
       width: 10%;
       margin-top: 10px;
-      margin-right: -35px;
+      margin-right: -26px;
       flex-grow: 4;
       transform: translateX(-15px);
       -webkit-transform: translateX(-15px);
       -moz-transform: translateX(-15px);
       font-weight: 500;
-      font-size: 15px;
+      font-size: 14px;
     }
 
     &:hover {
