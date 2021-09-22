@@ -6,10 +6,10 @@ $primary-background-color: grey;
 
 //------ LOADER VARIABLES ------
 $size: 3vh;
-$anim-duration: 2s;
+$anim-duration: 1.5s;
 $num-bars: 5;
 $anim-delay: math.div($anim-duration, $num-bars);
-$loader-background-duration: 6s;
+$loader-background-duration: 4s;
 
 $shadow: (
   size: 5px,
@@ -31,6 +31,7 @@ $display-content: (
 $heading-font-weight: 400;
 $tiertiary-font-weigth: 500;
 
+$primary-width: 100vw;
 $full-width: 100%;
 $tiertiary-font-size: 10pt;
 $primary-font: 'Roboto', sans-serif;
