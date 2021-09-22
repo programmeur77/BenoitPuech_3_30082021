@@ -89,17 +89,17 @@
 }
 
 .cards {
-  width: $full-width;
+  width: 100vw;
+  //margin: auto;
   padding-top: 20px;
   padding-bottom: 30px;
   background: lighten($primary-background-color, 47.5%);
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
 
   &__heading {
     width: $full-width;
-    margin: 30px 0 10px 20px;
+    margin: 30px 0 10px 30px;
     font-weight: $heading-font-weight;
 
     @include tablet-responsive {
@@ -109,7 +109,8 @@
 }
 
 .card {
-  width: 85vw;
+  width: 80vw;
+  margin-left: 30px;
   margin-bottom: 0;
 
   @include tablet-responsive {
@@ -117,7 +118,7 @@
   }
 
   &__image {
-    width: 105%;
+    width: 85vw;
     height: 150px;
     object-fit: cover;
     position: relative;
@@ -125,14 +126,13 @@
   }
 
   &__link {
-    margin-left: -20px;
     text-decoration: none;
     color: black;
   }
 
   &__new {
     right: 10%;
-    margin-top: 25px;
+    margin-top: 10px;
     padding: 5px 10px;
     position: absolute;
     font-size: $tiertiary-font-size;
@@ -144,7 +144,7 @@
   }
 
   &__desc {
-    width: 105%;
+    width: 85vw;
     margin-top: -3px;
     display: flex;
     justify-content: space-between;
