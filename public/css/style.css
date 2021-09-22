@@ -193,19 +193,19 @@ header .header__logo {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: 15px;
+  font-size: 14px;
   transition: width 0.3s;
 }
 .menu .item__price {
   width: 10%;
   margin-top: 10px;
-  margin-right: -35px;
+  margin-right: -26px;
   flex-grow: 4;
   transform: translateX(-15px);
   -webkit-transform: translateX(-15px);
   -moz-transform: translateX(-15px);
   font-weight: 500;
-  font-size: 15px;
+  font-size: 14px;
 }
 .menu .item:hover > .select {
   transform: scaleX(1);
