@@ -1,33 +1,33 @@
 footer {
-    padding-left: 25px;
-    padding-top: 5px;
-    padding-bottom: 10px;
-    width: $full-width;
-    background: darken($primary-background-color, 30%);
-    @include white('color');
+  padding-left: 25px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  width: $primary-width;
+  background: darken($primary-background-color, 30%);
+  @include white('color');
 }
 
 .footer {
-    &__brand {
-        font-family: 'Shrikhand', sans-serif;
+  &__brand {
+    font-family: 'Shrikhand', sans-serif;
+  }
+
+  &-navbar {
+    margin-left: -35px;
+
+    &__link {
+      padding-bottom: 10px;
+      list-style-type: none;
+
+      &--active {
+        text-decoration: none;
+        @include white('color');
+      }
     }
 
-    &-navbar {
-        margin-left: -35px;
-
-        &__link {
-            padding-bottom: 10px;
-            list-style-type: none;
-
-            &--active {
-                text-decoration: none;
-                @include white('color');
-            }
-        }
-    
-        &__icon {
-            width: 5px;
-            margin-right: 25px;
-        }
+    &__icon {
+      width: 5px;
+      margin-right: 25px;
     }
+  }
 }
