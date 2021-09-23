@@ -99,7 +99,6 @@ header .header__logo {
 .menu .flex-title .card__desc-icon::after {
   top: 0;
   bottom: 29px;
-  left: -0.5px;
   font-size: 17px;
 }
 .menu__heading {
@@ -469,7 +468,7 @@ footer {
   content: "\f004";
   position: absolute;
   bottom: 26px;
-  right: -0.8px;
+  right: 0;
   z-index: -1;
   background: linear-gradient(#ff79da, #9356dc);
   background-clip: text;
