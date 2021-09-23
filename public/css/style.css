@@ -260,7 +260,7 @@ footer {
 .booking {
   width: 100%;
   margin-top: 0;
-  padding: 10px;
+  padding: 30px;
   background: #f9f9f9;
   text-align: center;
   display: flex;
@@ -421,8 +421,13 @@ footer {
   color: white;
   background: linear-gradient(#ff79da, #9356dc);
   border-radius: 25px;
-  box-shadow: 0 5px 5px #e6e6e6;
+  box-shadow: 0 5px 5px #a6a6a6;
+  transition: box-shadow 150ms ease;
   font-size: 11pt;
+}
+.booking__button:hover {
+  background: linear-gradient(#ff93e1, #a16be0);
+  box-shadow: 10px 5px 5px #a6a6a6;
 }
 
 .menu__border {
