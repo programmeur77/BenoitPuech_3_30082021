@@ -8,6 +8,15 @@
   @include white('color');
   @include gradient-color;
   border-radius: 25px;
-  @include shadow;
+  box-shadow: 0 5px 5px lighten($primary-background-color, 15%);
+  transition: box-shadow 150ms ease;
   font-size: 11pt;
+
+  &:hover {
+    background: linear-gradient(
+      lighten($secondary-color, 5%),
+      lighten($primary-color, 5%)
+    );
+    box-shadow: 10px 5px 5px lighten($primary-background-color, 15%);
+  }
 }
