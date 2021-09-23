@@ -103,9 +103,6 @@
       margin-top: 10px;
       margin-right: -26px;
       flex-grow: 4;
-      /*transform: translateX(-15px);
-      -webkit-transform: translateX(-15px);
-      -moz-transform: translateX(-15px);*/
       font-weight: 500;
       font-size: 14px;
     }
@@ -126,33 +123,6 @@
       & > .item__desc {
         width: 40%;
       }
-    }
-  }
-
-  .select {
-    padding: 29px;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 100;
-    border-radius: 0 15px 15px 0;
-    background: $tertiary-color;
-    position: absolute;
-    @include white('color');
-    transform: scaleX(0);
-    -webkit-transform: scaleX(0);
-    -moz-transform: scaleX(0);
-    transform-origin: right;
-    -webkit-transform-origin: right;
-    -moz-transform-origin: right;
-    transition: transform 0.3s ease;
-    -webkit-transition: transform 0.3s ease;
-    -webkit-transition: transform 0.3s ease;
-
-    &__icon {
-      transition: transform 400ms ease;
-      -webkit-transition: transform 400ms ease;
-      -moz-transition: transform 400ms ease;
     }
   }
 }
