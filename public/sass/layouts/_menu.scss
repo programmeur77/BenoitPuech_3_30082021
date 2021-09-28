@@ -16,12 +16,22 @@
   background: lighten($primary-background-color, 47.5%);
   border-radius: 25px 25px 0 0;
 
+  @include tablet-responsive {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
   .flex-title {
-    width: 90%;
+    width: 90vw;
     margin-left: 20px;
     margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
+
+    @include tablet-responsive {
+      margin-right: 60px;
+    }
 
     &__heading {
       font-family: $menu-heading-font;
@@ -39,12 +49,23 @@
   }
 
   &__heading {
+    width: 10vw;
     margin-left: 20px;
     margin-bottom: 5px;
     margin-top: 30px;
     text-transform: uppercase;
     font-weight: 300;
     font-size: 12pt;
+
+    @include tablet-responsive {
+      width: 100vw;
+      display: block;
+    }
+  }
+
+  .element__heading {
+    width: 100vw;
+    margin-bottom: 0;
   }
 
   .item {
@@ -70,6 +91,13 @@
     -webkit-animation: fadeIn $animation-duration forwards;
     -moz-animation: fadeIn $animation-duration forwards;
 
+    @include tablet-responsive {
+      width: 28vw;
+      margin-top: 10px;
+      margin-left: -60px;
+      margin-right: 70px;
+    }
+
     @for $i from 1 through $item-count {
       &--#{$i} {
         animation-delay: $animation-delay * $i;
@@ -83,6 +111,10 @@
       margin: 10px 0 0 0;
       font-weight: $tiertiary-font-weigth;
       font-size: 16px;
+
+      @include tablet-responsive {
+        font-size: 10.5px;
+      }
     }
 
     &__desc {
@@ -96,6 +128,10 @@
       text-overflow: ellipsis;
       font-size: 12px;
       transition: width 0.3s ease;
+
+      @include tablet-responsive {
+        font-size: 9px;
+      }
     }
 
     &__price {
@@ -105,6 +141,12 @@
       flex-grow: 4;
       font-weight: 500;
       font-size: 14px;
+
+      @include tablet-responsive {
+        margin-top: 8px;
+        margin-right: -10px;
+        font-size: 10px;
+      }
     }
 
     &:hover {
@@ -121,7 +163,7 @@
       }
 
       & > .item__desc {
-        width: 40%;
+        width: 33%;
       }
     }
   }
