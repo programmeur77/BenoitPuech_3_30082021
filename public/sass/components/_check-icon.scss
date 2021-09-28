@@ -18,6 +18,10 @@
   -webkit-transition: transform 0.3s ease;
   -webkit-transition: transform 0.3s ease;
 
+  @include tablet-responsive {
+    padding: 20px;
+  }
+
   &__icon {
     transition: transform 400ms ease;
     -webkit-transition: transform 400ms ease;
