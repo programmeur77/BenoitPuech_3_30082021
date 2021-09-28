@@ -228,12 +228,13 @@ header .header__logo {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: 12px;
+  font-size: 13px;
   transition: width 0.3s ease;
 }
 @media screen and (min-width: 601px) {
   .menu .item__desc {
-    font-size: 0.64rem;
+    width: 83%;
+    font-size: 0.65rem;
   }
 }
 .menu .item__price {
@@ -262,7 +263,7 @@ header .header__logo {
   -moz-transform: rotate(-1turn);
 }
 .menu .item:hover > .item__desc {
-  width: 33%;
+  width: 40%;
 }
 
 footer {
@@ -590,7 +591,7 @@ footer {
 
 .loader {
   width: 100vw;
-  height: 102vh;
+  height: 107vh;
   position: fixed;
   display: flex;
   justify-content: center;
