@@ -157,10 +157,10 @@ header .header__logo {
 }
 @media screen and (min-width: 601px) {
   .menu .item {
-    width: 28vw;
+    width: 31vw;
     margin-top: 10px;
-    margin-left: -60px;
-    margin-right: 70px;
+    margin-left: -25px;
+    margin-right: 30px;
   }
 }
 .menu .item--1 {
@@ -216,7 +216,7 @@ header .header__logo {
 }
 @media screen and (min-width: 601px) {
   .menu .item__name {
-    font-size: 10.5px;
+    font-size: 0.8rem;
   }
 }
 .menu .item__desc {
@@ -233,7 +233,7 @@ header .header__logo {
 }
 @media screen and (min-width: 601px) {
   .menu .item__desc {
-    font-size: 9px;
+    font-size: 0.64rem;
   }
 }
 .menu .item__price {
@@ -246,9 +246,9 @@ header .header__logo {
 }
 @media screen and (min-width: 601px) {
   .menu .item__price {
-    margin-top: 8px;
+    margin-top: 10px;
     margin-right: -10px;
-    font-size: 10px;
+    font-size: 0.64rem;
   }
 }
 .menu .item:hover > .select {

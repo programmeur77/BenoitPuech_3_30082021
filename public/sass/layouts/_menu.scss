@@ -92,10 +92,10 @@
     -moz-animation: fadeIn $animation-duration forwards;
 
     @include tablet-responsive {
-      width: 28vw;
+      width: 31vw;
       margin-top: 10px;
-      margin-left: -60px;
-      margin-right: 70px;
+      margin-left: -25px;
+      margin-right: 30px;
     }
 
     @for $i from 1 through $item-count {
@@ -113,7 +113,7 @@
       font-size: 16px;
 
       @include tablet-responsive {
-        font-size: 10.5px;
+        font-size: .8rem;
       }
     }
 
@@ -130,7 +130,7 @@
       transition: width 0.3s ease;
 
       @include tablet-responsive {
-        font-size: 9px;
+        font-size: .64rem;
       }
     }
 
@@ -143,9 +143,9 @@
       font-size: 14px;
 
       @include tablet-responsive {
-        margin-top: 8px;
+        margin-top: 10px;
         margin-right: -10px;
-        font-size: 10px;
+        font-size: .64rem;
       }
     }
 
