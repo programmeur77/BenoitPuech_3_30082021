@@ -126,11 +126,12 @@
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      font-size: 12px;
+      font-size: 13px;
       transition: width 0.3s ease;
 
       @include tablet-responsive {
-        font-size: .64rem;
+        width: 83%;
+        font-size: .65rem;
       }
     }
 
@@ -163,7 +164,7 @@
       }
 
       & > .item__desc {
-        width: 33%;
+        width: 40%;
       }
     }
   }
