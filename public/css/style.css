@@ -83,12 +83,24 @@ header .header__logo {
   background: #f9f9f9;
   border-radius: 25px 25px 0 0;
 }
+@media screen and (min-width: 601px) {
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+}
 .menu .flex-title {
-  width: 90%;
+  width: 90vw;
   margin-left: 20px;
   margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
+}
+@media screen and (min-width: 601px) {
+  .menu .flex-title {
+    margin-right: 60px;
+  }
 }
 .menu .flex-title__heading {
   font-family: "Shrikhand", sans-serif;
@@ -102,12 +114,23 @@ header .header__logo {
   font-size: 17px;
 }
 .menu__heading {
+  width: 10vw;
   margin-left: 20px;
   margin-bottom: 5px;
   margin-top: 30px;
   text-transform: uppercase;
   font-weight: 300;
   font-size: 12pt;
+}
+@media screen and (min-width: 601px) {
+  .menu__heading {
+    width: 100vw;
+    display: block;
+  }
+}
+.menu .element__heading {
+  width: 100vw;
+  margin-bottom: 0;
 }
 .menu .item {
   width: 90vw;
@@ -131,6 +154,14 @@ header .header__logo {
   animation: fadeIn 1s forwards;
   -webkit-animation: fadeIn 1s forwards;
   -moz-animation: fadeIn 1s forwards;
+}
+@media screen and (min-width: 601px) {
+  .menu .item {
+    width: 28vw;
+    margin-top: 10px;
+    margin-left: -60px;
+    margin-right: 70px;
+  }
 }
 .menu .item--1 {
   animation-delay: 0.1111111111s;
@@ -183,6 +214,11 @@ header .header__logo {
   font-weight: 500;
   font-size: 16px;
 }
+@media screen and (min-width: 601px) {
+  .menu .item__name {
+    font-size: 10.5px;
+  }
+}
 .menu .item__desc {
   width: 80%;
   flex-grow: 3;
@@ -195,6 +231,11 @@ header .header__logo {
   font-size: 12px;
   transition: width 0.3s ease;
 }
+@media screen and (min-width: 601px) {
+  .menu .item__desc {
+    font-size: 9px;
+  }
+}
 .menu .item__price {
   width: 10%;
   margin-top: 10px;
@@ -202,6 +243,13 @@ header .header__logo {
   flex-grow: 4;
   font-weight: 500;
   font-size: 14px;
+}
+@media screen and (min-width: 601px) {
+  .menu .item__price {
+    margin-top: 8px;
+    margin-right: -10px;
+    font-size: 10px;
+  }
 }
 .menu .item:hover > .select {
   transform: scaleX(1);
@@ -214,7 +262,7 @@ header .header__logo {
   -moz-transform: rotate(-1turn);
 }
 .menu .item:hover > .item__desc {
-  width: 40%;
+  width: 33%;
 }
 
 footer {
@@ -465,6 +513,11 @@ footer {
   margin-bottom: 10px;
   background: #99e2d0;
 }
+@media screen and (min-width: 601px) {
+  .menu__border {
+    width: 5%;
+  }
+}
 
 .card__desc-icon {
   margin-top: 25px;
@@ -523,6 +576,11 @@ footer {
   transition: transform 0.3s ease;
   -webkit-transition: transform 0.3s ease;
   -webkit-transition: transform 0.3s ease;
+}
+@media screen and (min-width: 601px) {
+  .select {
+    padding: 20px;
+  }
 }
 .select__icon {
   transition: transform 400ms ease;
