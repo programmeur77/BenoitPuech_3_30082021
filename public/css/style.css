@@ -74,6 +74,11 @@ header .header__logo {
   object-fit: cover;
   position: absolute;
 }
+@media screen and (min-width: 601px) {
+  .restaurant__image {
+    height: 400px;
+  }
+}
 
 .menu {
   margin-top: 175px;
@@ -88,6 +93,7 @@ header .header__logo {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
+    margin-top: 350px;
   }
 }
 .menu .flex-title {
@@ -216,7 +222,7 @@ header .header__logo {
 }
 @media screen and (min-width: 601px) {
   .menu .item__name {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
   }
 }
 .menu .item__desc {
@@ -237,6 +243,12 @@ header .header__logo {
     font-size: 0.65rem;
   }
 }
+@media screen and (min-width: 905px) and (max-width: 971px) {
+  .menu .item__desc {
+    width: 84%;
+    font-size: 0.78rem;
+  }
+}
 .menu .item__price {
   width: 10%;
   margin-top: 10px;
@@ -249,7 +261,12 @@ header .header__logo {
   .menu .item__price {
     margin-top: 10px;
     margin-right: -10px;
-    font-size: 0.64rem;
+    font-size: 0.65rem;
+  }
+}
+@media screen and (min-width: 905px) and (max-width: 971px) {
+  .menu .item__price {
+    font-size: 0.78rem;
   }
 }
 .menu .item:hover > .select {
@@ -264,6 +281,11 @@ header .header__logo {
 }
 .menu .item:hover > .item__desc {
   width: 40%;
+}
+@media screen and (min-width: 905px) and (max-width: 971px) {
+  .menu .item:hover > .item__desc {
+    width: 47%;
+  }
 }
 
 footer {
@@ -322,6 +344,7 @@ footer {
 }
 
 .howto {
+  width: 100vw;
   display: flex;
   flex-direction: column;
   margin-left: 20px;
@@ -340,9 +363,9 @@ footer {
 }
 @media screen and (min-width: 601px) {
   .howto__list {
-    width: fit-content;
-    margin: auto;
     display: flex;
+    justify-content: center;
+    font-size: 1.3vw;
   }
 }
 .howto__item--nolist {
@@ -357,9 +380,10 @@ footer {
 }
 @media screen and (min-width: 601px) {
   .howto__item--nolist {
-    width: fit-content;
-    margin-right: 25px;
-    font-size: 11.6px;
+    width: 50vw;
+    padding: 6vmin;
+    padding-right: 20px;
+    margin-right: 30px;
   }
 }
 .howto__item--nolist:hover {
@@ -370,7 +394,7 @@ footer {
 }
 .howto__item--nolist::before {
   padding: 5px 9px;
-  top: 35%;
+  top: 20;
   right: 1000;
   bottom: 40;
   left: -13px;
@@ -381,18 +405,17 @@ footer {
   text-align: center;
   color: white;
   font-size: 9pt;
-  top: 40%;
 }
 .howto__icon {
   width: 20px;
-  margin-right: 20px;
+  margin-right: 10px;
   color: grey;
 }
 @media screen and (min-width: 601px) {
   .howto__icon {
-    width: 5px;
-    margin-right: 19px;
-    margin-left: -15px;
+    width: 10px;
+    margin-right: 15px;
+    margin-left: -10px;
   }
 }
 
