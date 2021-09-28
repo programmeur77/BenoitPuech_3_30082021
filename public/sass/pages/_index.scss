@@ -106,6 +106,7 @@
   background: lighten($primary-background-color, 47.5%);
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 
   @include tablet-responsive {
     justify-content: center;
@@ -113,14 +114,14 @@
 
   &__heading {
     width: $primary-width;
-    margin: 30px 0 10px 30px;
+    margin: 30px 0 10px 20px;
     font-weight: $heading-font-weight;
   }
 }
 
 .card {
   width: 80vw;
-  margin-left: 30px;
+  margin-left: 20px;
   margin-bottom: 0;
   position: relative;
 
