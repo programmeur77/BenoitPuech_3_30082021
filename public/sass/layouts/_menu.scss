@@ -5,6 +5,10 @@
     height: 200px;
     object-fit: cover;
     position: absolute;
+
+    @include tablet-responsive {
+      height: 400px;
+    }
   }
 }
 
@@ -20,6 +24,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
+    margin-top: 350px;
   }
 
   .flex-title {
@@ -113,7 +118,7 @@
       font-size: 16px;
 
       @include tablet-responsive {
-        font-size: .8rem;
+        font-size: .75rem;
       }
     }
 
@@ -133,6 +138,11 @@
         width: 83%;
         font-size: .65rem;
       }
+
+      @include intermediate-responsive {
+        width: 84%;
+        font-size: .78rem;
+      }
     }
 
     &__price {
@@ -146,7 +156,11 @@
       @include tablet-responsive {
         margin-top: 10px;
         margin-right: -10px;
-        font-size: .64rem;
+        font-size: .65rem;
+      }
+
+      @include intermediate-responsive {
+        font-size: .78rem;
       }
     }
 
@@ -165,6 +179,9 @@
 
       & > .item__desc {
         width: 40%;
+        @include intermediate-responsive {
+          width: 47%;
+        }
       }
     }
   }
