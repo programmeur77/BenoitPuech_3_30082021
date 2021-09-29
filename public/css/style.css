@@ -37,7 +37,7 @@
 }
 
 body {
-  width: 100%;
+  width: 100vw;
   height: fit-content;
   margin: 0;
   padding: 0;
@@ -62,7 +62,7 @@ header .header__logo {
   width: 200px;
   height: 40px;
   margin: auto;
-  align-self: center;
+  vertical-align: center;
 }
 
 .restaurant {
@@ -96,6 +96,11 @@ header .header__logo {
     margin-top: 350px;
   }
 }
+@media screen and (min-width: 971px) {
+  .menu {
+    justify-content: center;
+  }
+}
 .menu .flex-title {
   width: 90vw;
   margin-left: 20px;
@@ -106,6 +111,12 @@ header .header__logo {
 @media screen and (min-width: 601px) {
   .menu .flex-title {
     margin-right: 60px;
+  }
+}
+@media screen and (min-width: 971px) {
+  .menu .flex-title {
+    width: 72vw;
+    margin-left: 0;
   }
 }
 .menu .flex-title__heading {
@@ -128,15 +139,14 @@ header .header__logo {
   font-weight: 300;
   font-size: 12pt;
 }
-@media screen and (min-width: 601px) {
-  .menu__heading {
-    width: 100vw;
-    display: block;
-  }
-}
 .menu .element__heading {
   width: 100vw;
   margin-bottom: 0;
+}
+@media screen and (min-width: 971px) {
+  .menu .element__heading {
+    margin-left: 150px;
+  }
 }
 .menu .item {
   width: 90vw;
@@ -169,50 +179,119 @@ header .header__logo {
     margin-right: 30px;
   }
 }
+@media screen and (min-width: 971px) {
+  .menu .item {
+    width: 300px;
+    margin-left: 30px;
+  }
+}
 .menu .item--1 {
   animation-delay: 0.1111111111s;
   -webkit-animation-delay: 0.1111111111s;
   -moz-animation-delay: 0.1111111111s;
+}
+@media screen and (min-width: 601px) {
+  .menu .item {
+    animation-delay: 0.1111111111s;
+    -webkit-animation-delay: 0.1111111111s;
+    -moz-animation-delay: 0.1111111111s;
+  }
 }
 .menu .item--2 {
   animation-delay: 0.2222222222s;
   -webkit-animation-delay: 0.2222222222s;
   -moz-animation-delay: 0.2222222222s;
 }
+@media screen and (min-width: 601px) {
+  .menu .item {
+    animation-delay: 0.1111111111s;
+    -webkit-animation-delay: 0.1111111111s;
+    -moz-animation-delay: 0.1111111111s;
+  }
+}
 .menu .item--3 {
   animation-delay: 0.3333333333s;
   -webkit-animation-delay: 0.3333333333s;
   -moz-animation-delay: 0.3333333333s;
+}
+@media screen and (min-width: 601px) {
+  .menu .item {
+    animation-delay: 0.1111111111s;
+    -webkit-animation-delay: 0.1111111111s;
+    -moz-animation-delay: 0.1111111111s;
+  }
 }
 .menu .item--4 {
   animation-delay: 0.4444444444s;
   -webkit-animation-delay: 0.4444444444s;
   -moz-animation-delay: 0.4444444444s;
 }
+@media screen and (min-width: 601px) {
+  .menu .item {
+    animation-delay: 0.1111111111s;
+    -webkit-animation-delay: 0.1111111111s;
+    -moz-animation-delay: 0.1111111111s;
+  }
+}
 .menu .item--5 {
   animation-delay: 0.5555555556s;
   -webkit-animation-delay: 0.5555555556s;
   -moz-animation-delay: 0.5555555556s;
+}
+@media screen and (min-width: 601px) {
+  .menu .item {
+    animation-delay: 0.1111111111s;
+    -webkit-animation-delay: 0.1111111111s;
+    -moz-animation-delay: 0.1111111111s;
+  }
 }
 .menu .item--6 {
   animation-delay: 0.6666666667s;
   -webkit-animation-delay: 0.6666666667s;
   -moz-animation-delay: 0.6666666667s;
 }
+@media screen and (min-width: 601px) {
+  .menu .item {
+    animation-delay: 0.1111111111s;
+    -webkit-animation-delay: 0.1111111111s;
+    -moz-animation-delay: 0.1111111111s;
+  }
+}
 .menu .item--7 {
   animation-delay: 0.7777777778s;
   -webkit-animation-delay: 0.7777777778s;
   -moz-animation-delay: 0.7777777778s;
+}
+@media screen and (min-width: 601px) {
+  .menu .item {
+    animation-delay: 0.1111111111s;
+    -webkit-animation-delay: 0.1111111111s;
+    -moz-animation-delay: 0.1111111111s;
+  }
 }
 .menu .item--8 {
   animation-delay: 0.8888888889s;
   -webkit-animation-delay: 0.8888888889s;
   -moz-animation-delay: 0.8888888889s;
 }
+@media screen and (min-width: 601px) {
+  .menu .item {
+    animation-delay: 0.1111111111s;
+    -webkit-animation-delay: 0.1111111111s;
+    -moz-animation-delay: 0.1111111111s;
+  }
+}
 .menu .item--9 {
   animation-delay: 1s;
   -webkit-animation-delay: 1s;
   -moz-animation-delay: 1s;
+}
+@media screen and (min-width: 601px) {
+  .menu .item {
+    animation-delay: 0.1111111111s;
+    -webkit-animation-delay: 0.1111111111s;
+    -moz-animation-delay: 0.1111111111s;
+  }
 }
 .menu .item__name {
   width: 100vw;
@@ -223,6 +302,11 @@ header .header__logo {
 @media screen and (min-width: 601px) {
   .menu .item__name {
     font-size: 0.75rem;
+  }
+}
+@media screen and (min-width: 971px) {
+  .menu .item__name {
+    font-size: 0.97rem;
   }
 }
 .menu .item__desc {
@@ -249,6 +333,11 @@ header .header__logo {
     font-size: 0.78rem;
   }
 }
+@media screen and (min-width: 971px) {
+  .menu .item__desc {
+    font-size: 0.77rem;
+  }
+}
 .menu .item__price {
   width: 10%;
   margin-top: 10px;
@@ -267,6 +356,11 @@ header .header__logo {
 @media screen and (min-width: 905px) and (max-width: 971px) {
   .menu .item__price {
     font-size: 0.78rem;
+  }
+}
+@media screen and (min-width: 971px) {
+  .menu .item__price {
+    font-size: 0.8rem;
   }
 }
 .menu .item:hover > .select {
@@ -289,10 +383,10 @@ header .header__logo {
 }
 
 footer {
+  width: 100vw;
   padding-left: 25px;
   padding-top: 5px;
   padding-bottom: 10px;
-  width: 100vw;
   background: #343434;
   color: white;
 }
@@ -368,6 +462,11 @@ footer {
     font-size: 1.6vw;
   }
 }
+@media screen and (min-width: 971px) {
+  .howto__list {
+    font-size: 1rem;
+  }
+}
 .howto__item--nolist {
   margin: 0 20px 20px 0;
   padding: 7vmin;
@@ -418,6 +517,11 @@ footer {
     margin-left: -1.9vw;
   }
 }
+@media screen and (min-width: 971px) {
+  .howto__icon {
+    margin-left: 0;
+  }
+}
 
 .cards {
   width: 100vw;
@@ -427,11 +531,6 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-@media screen and (min-width: 601px) {
-  .cards {
-    justify-content: center;
-  }
 }
 .cards__heading {
   width: 100vw;
@@ -463,6 +562,11 @@ footer {
   .card__image {
     width: 45vw;
     height: 110px;
+  }
+}
+@media screen and (min-width: 971px) {
+  .card__image {
+    height: 200px;
   }
 }
 .card__link {
@@ -515,9 +619,7 @@ footer {
 .booking__button {
   width: fit-content;
   margin: auto;
-  padding: 1rem;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding: 1rem 50px;
   text-decoration: none;
   color: white;
   background: linear-gradient(#ff79da, #9356dc);
@@ -541,6 +643,11 @@ footer {
 @media screen and (min-width: 601px) {
   .menu__border {
     width: 5%;
+  }
+}
+@media screen and (min-width: 971px) {
+  .menu__border {
+    width: 3%;
   }
 }
 
@@ -605,6 +712,11 @@ footer {
 @media screen and (min-width: 601px) {
   .select {
     padding: 20px;
+  }
+}
+@media screen and (min-width: 971px) {
+  .select {
+    padding: 25px;
   }
 }
 .select__icon {
