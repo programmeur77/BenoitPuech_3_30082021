@@ -22,13 +22,19 @@ $shadow-size: map-get($shadow, size), $enlightment: 40%) {
 }
 
 @mixin tablet-responsive {
-    @media screen and (min-width: map-get($breakpoints, tablet)) /*and (max-width: map-get($breakpoints, intermediate))*/ {
+    @media screen and (min-width: map-get($breakpoints, tablet)) {
         @content;
     }
 }
 
 @mixin intermediate-responsive {
     @media screen and (min-width: map-get($breakpoints, intermediate)) and (max-width: map-get($breakpoints, desktop)) {
+        @content;
+    }
+}
+
+@mixin desktop-responsive {
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
         @content;
     }
 }
