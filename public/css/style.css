@@ -415,7 +415,7 @@ footer {
   .howto__icon {
     width: 10px;
     margin-right: 2vw;
-    margin-left: 0;
+    margin-left: -0.5vw;
   }
 }
 
