@@ -44,7 +44,7 @@
     @include tablet-responsive {
       display: flex;
       justify-content: center;
-      font-size: 1.3vw;
+      font-size: 1.6vw;
       
     }
   }
@@ -95,8 +95,8 @@
 
     @include tablet-responsive {
       width: 10px;
-      margin-right: 15px;
-      margin-left: -10px;
+      margin-right: 2vw;
+      margin-left: -2vw;
     }
   }
 }
