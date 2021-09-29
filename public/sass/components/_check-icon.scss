@@ -1,11 +1,8 @@
 .select {
-  padding: 29px;
-  top: 0;
+  padding: 25px;
   right: 0;
-  bottom: 0;
-  left: 70vw;
-  border-radius: 0 15px 15px 0;
   background: $tertiary-color;
+  border-radius: 0 15px 15px 0;
   position: absolute;
   @include white('color');
   transform: scaleX(0);
@@ -18,14 +15,13 @@
   -webkit-transition: transform 0.3s ease;
   -webkit-transition: transform 0.3s ease;
 
+
   @include tablet-responsive {
-    left: 180px;
     padding: 20px;
   }
 
   @include desktop-responsive {
-    left: 235px;
-    padding: 25px;
+    padding: 23px;
   }
 
   &__icon {
