@@ -1,7 +1,7 @@
 header {
   width: $primary-width;
   height: 70px;
-  display: flex;
+  display: map-get($display-content, display);
   justify-content: space-between;
   .header {
     &__arrow {
@@ -16,7 +16,7 @@ header {
       width: 200px;
       height: 40px;
       margin: auto;
-      align-self: center;
+      vertical-align: center;
     }
   }
 }
