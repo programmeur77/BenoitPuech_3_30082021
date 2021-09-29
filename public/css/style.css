@@ -414,7 +414,7 @@ footer {
 @media screen and (min-width: 601px) {
   .howto__icon {
     width: 10px;
-    margin-right: 1vw;
+    margin-right: 1.5vw;
     margin-left: -1vw;
   }
 }
