@@ -493,10 +493,10 @@ footer {
 }
 .howto__item--nolist::before {
   padding: 5px 9px;
-  top: 20;
-  right: 1000;
-  bottom: 40;
-  left: -13px;
+  top: 22px;
+  right: 299px;
+  bottom: 23px;
+  left: -10px;
   content: counter(li);
   position: absolute;
   background: #9356dc;
