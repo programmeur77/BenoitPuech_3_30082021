@@ -493,12 +493,11 @@ footer {
   color: #9356dc;
 }
 .howto__item--nolist::before {
-  bottom: 25px;
-  left: 12px;
+  bottom: 22px;
+  left: -10px;
   padding: 6px 9px;
   position: absolute;
   content: counter(li);
-  margin-left: -25px;
   background: #9356dc;
   border-radius: 50%;
   font-size: 11px;
@@ -506,7 +505,7 @@ footer {
 }
 @media screen and (min-width: 601px) {
   .howto__item--nolist::before {
-    bottom: 35px;
+    bottom: 40px;
   }
 }
 @media screen and (min-width: 971px) {
@@ -717,7 +716,7 @@ footer {
 }
 @media screen and (min-width: 601px) {
   .select {
-    padding: 20px;
+    padding: 19px;
   }
 }
 @media screen and (min-width: 971px) {
