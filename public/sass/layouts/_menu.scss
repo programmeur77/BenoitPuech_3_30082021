@@ -28,6 +28,7 @@
   }
 
   @include desktop-responsive {
+    flex-wrap: wrap;
     justify-content: center;
   }
 
@@ -80,7 +81,7 @@
       margin-left: 150px;
     }
   }
-
+  
   .item {
     width: 90vw;
     margin-left: 20px;
