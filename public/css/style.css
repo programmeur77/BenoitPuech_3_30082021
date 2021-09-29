@@ -306,7 +306,7 @@ header .header__logo {
 }
 @media screen and (min-width: 971px) {
   .menu .item__name {
-    font-size: 0.97rem;
+    font-size: 0.85rem;
   }
 }
 .menu .item__desc {
@@ -502,7 +502,6 @@ footer {
   background: #9356dc;
   border-radius: 50%;
   text-align: center;
-  vertical-align: middle;
   color: white;
   font-size: 9pt;
 }
@@ -684,9 +683,9 @@ footer {
   -moz-transition: transform 0.6s, z-index 0.3s;
 }
 .card__desc-icon:hover::after {
-  transform: scale(100%);
-  -webkit-transform: scale(100%);
-  -moz-transform: scale(100%);
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
   z-index: 2;
 }
 
@@ -695,7 +694,7 @@ footer {
   top: 0;
   right: 0;
   bottom: 0;
-  left: 100;
+  left: 70vw;
   border-radius: 0 15px 15px 0;
   background: #99e2d0;
   position: absolute;
@@ -712,11 +711,13 @@ footer {
 }
 @media screen and (min-width: 601px) {
   .select {
+    left: 180px;
     padding: 20px;
   }
 }
 @media screen and (min-width: 971px) {
   .select {
+    left: 235px;
     padding: 25px;
   }
 }
