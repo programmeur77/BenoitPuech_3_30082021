@@ -11,6 +11,23 @@ $num-bars: 5;
 $anim-delay: math.div($anim-duration, $num-bars);
 $loader-background-duration: 4s;
 
+// ------ WIDTH VARIABLES ------
+$primary-width: 100vw;
+$full-width: 100%;
+
+//------ FONT VARIABLES ------
+$tiertiary-font-size: 10pt;
+$primary-font: 'Roboto', sans-serif;
+$menu-heading-font: 'Shrikhand', sans-serif;
+$heading-font-weight: 400;
+$tiertiary-font-weigth: 500;
+
+//------ MENU FADE IN EFFECT VARIABLES ------
+$item-count: 9;
+$animation-duration: 1s;
+$animation-delay: math.div($animation-duration, $item-count);
+
+//------ MAPS ------
 $shadow: (
   size: 5px,
   position: 0,
@@ -29,17 +46,3 @@ $display-content: (
   align: center,
   direction: column,
 );
-
-$heading-font-weight: 400;
-$tiertiary-font-weigth: 500;
-
-$primary-width: 100vw;
-$full-width: 100%;
-$tiertiary-font-size: 10pt;
-$primary-font: 'Roboto', sans-serif;
-$menu-heading-font: 'Shrikhand', sans-serif;
-
-//------ MENU FADE IN EFFECT VARIABLES ------
-$item-count: 9;
-$animation-duration: 1s;
-$animation-delay: math.div($animation-duration, $item-count);
