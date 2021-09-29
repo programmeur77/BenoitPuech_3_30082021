@@ -77,18 +77,24 @@
       }
 
       &::before {
-        padding: 5px 9px;
-        top: 22px;
-        right: 299px;
-        bottom: 23px;
-        left: -10px;
-        content: counter(li);
+        bottom: 25px;
+        left: 12px;
+        padding: 6px 9px;
         position: absolute;
+        content: counter(li);
+        margin-left: -25px;
         background: $primary-color;
         border-radius: 50%;
-        text-align: center;
+        font-size: 11px;
         @include white('color');
-        font-size: 9pt;
+
+        @include tablet-responsive {
+          bottom: 30px;
+        }
+
+        @include desktop-responsive {
+          bottom: 35px;
+        }
       }
     }
   }
