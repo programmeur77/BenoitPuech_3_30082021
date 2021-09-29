@@ -21,21 +21,30 @@
   border-radius: 25px 25px 0 0;
 
   @include tablet-responsive {
-    display: flex;
+    display: map-get($display-content, display);
     flex-wrap: wrap;
     justify-content: flex-end;
     margin-top: 350px;
+  }
+
+  @include desktop-responsive {
+    justify-content: center;
   }
 
   .flex-title {
     width: 90vw;
     margin-left: 20px;
     margin-bottom: 20px;
-    display: flex;
+    display: map-get($display-content, display);
     justify-content: space-between;
 
     @include tablet-responsive {
       margin-right: 60px;
+    }
+
+    @include desktop-responsive {
+      width: 72vw;
+      margin-left: 0;
     }
 
     &__heading {
@@ -61,16 +70,15 @@
     text-transform: uppercase;
     font-weight: 300;
     font-size: 12pt;
-
-    @include tablet-responsive {
-      width: 100vw;
-      display: block;
-    }
   }
 
   .element__heading {
     width: 100vw;
     margin-bottom: 0;
+
+    @include desktop-responsive {
+      margin-left: 150px;
+    }
   }
 
   .item {
@@ -82,7 +90,7 @@
     @include shadow;
     border-radius: 15px;
     position: relative;
-    display: flex;
+    display: map-get($display-content, display);
     flex-wrap: wrap;
     justify-content: space-between;
     transform-origin: top;
@@ -103,11 +111,22 @@
       margin-right: 30px;
     }
 
+    @include desktop-responsive {
+      width: 300px;
+      margin-left: 30px;
+    }
+
     @for $i from 1 through $item-count {
       &--#{$i} {
         animation-delay: $animation-delay * $i;
         -webkit-animation-delay: $animation-delay * $i;
         -moz-animation-delay: $animation-delay * $i;
+      }
+
+      @include tablet-responsive {
+        animation-delay: $animation-delay;
+        -webkit-animation-delay: $animation-delay;
+        -moz-animation-delay: $animation-delay;
       }
     }
 
@@ -119,6 +138,10 @@
 
       @include tablet-responsive {
         font-size: .75rem;
+      }
+
+      @include desktop-responsive {
+        font-size: .97rem;
       }
     }
 
@@ -143,6 +166,10 @@
         width: 84%;
         font-size: .78rem;
       }
+
+      @include desktop-responsive {
+        font-size: .77rem;
+      }
     }
 
     &__price {
@@ -161,6 +188,10 @@
 
       @include intermediate-responsive {
         font-size: .78rem;
+      }
+
+      @include desktop-responsive {
+        font-size: .8rem;
       }
     }
 

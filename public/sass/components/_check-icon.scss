@@ -22,6 +22,10 @@
     padding: 20px;
   }
 
+  @include desktop-responsive {
+    padding: 25px;
+  }
+
   &__icon {
     transition: transform 400ms ease;
     -webkit-transition: transform 400ms ease;

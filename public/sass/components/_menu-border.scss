@@ -8,4 +8,8 @@
     @include tablet-responsive {
         width: 5%;
     }
+
+    @include desktop-responsive {
+        width: 3%;
+    }
 }
