@@ -98,6 +98,7 @@ header .header__logo {
 }
 @media screen and (min-width: 971px) {
   .menu {
+    flex-wrap: wrap;
     justify-content: center;
   }
 }
@@ -492,18 +493,26 @@ footer {
   color: #9356dc;
 }
 .howto__item--nolist::before {
-  padding: 5px 9px;
-  top: 22px;
-  right: 299px;
-  bottom: 23px;
-  left: -10px;
-  content: counter(li);
+  bottom: 25px;
+  left: 12px;
+  padding: 6px 9px;
   position: absolute;
+  content: counter(li);
+  margin-left: -25px;
   background: #9356dc;
   border-radius: 50%;
-  text-align: center;
+  font-size: 11px;
   color: white;
-  font-size: 9pt;
+}
+@media screen and (min-width: 601px) {
+  .howto__item--nolist::before {
+    bottom: 30px;
+  }
+}
+@media screen and (min-width: 971px) {
+  .howto__item--nolist::before {
+    bottom: 35px;
+  }
 }
 .howto__icon {
   width: 20px;
@@ -690,13 +699,10 @@ footer {
 }
 
 .select {
-  padding: 29px;
-  top: 0;
+  padding: 25px;
   right: 0;
-  bottom: 0;
-  left: 70vw;
-  border-radius: 0 15px 15px 0;
   background: #99e2d0;
+  border-radius: 0 15px 15px 0;
   position: absolute;
   color: white;
   transform: scaleX(0);
@@ -711,14 +717,12 @@ footer {
 }
 @media screen and (min-width: 601px) {
   .select {
-    left: 180px;
     padding: 20px;
   }
 }
 @media screen and (min-width: 971px) {
   .select {
-    left: 235px;
-    padding: 25px;
+    padding: 23px;
   }
 }
 .select__icon {
