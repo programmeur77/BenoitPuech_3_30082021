@@ -2,7 +2,7 @@
   width: $primary-width;
   height: 107vh;
   position: fixed;
-  display: flex;
+  display: map-get($display-content, display);
   justify-content: center;
   @include white;
   animation: loader $loader-background-duration both;
@@ -15,7 +15,7 @@
   height: $size * 10;
   margin-top: auto;
   margin-bottom: auto;
-  display: flex;
+  display: map-get($display-content, display);
   justify-content: space-evenly;
   &__bar {
     background: linear-gradient($primary-color, $secondary-color);

@@ -1,9 +1,7 @@
 .booking__button {
   width: fit-content;
   margin: auto;
-  padding: 1rem;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding: 1rem 50px;
   text-decoration: none;
   @include white('color');
   @include gradient-color;

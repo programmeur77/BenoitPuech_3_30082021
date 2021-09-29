@@ -1,8 +1,8 @@
 footer {
+  width: $primary-width;
   padding-left: 25px;
   padding-top: 5px;
   padding-bottom: 10px;
-  width: $primary-width;
   background: darken($primary-background-color, 30%);
   @include white('color');
 }
